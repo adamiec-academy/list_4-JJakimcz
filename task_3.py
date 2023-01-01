@@ -5,7 +5,7 @@ def min_max(data):
     for l in data:
         if l<minimum:
             minimum=l
-        if l>maximum:
+        elif l>maximum:
             maximum=l
 
     return minimum, maximum
