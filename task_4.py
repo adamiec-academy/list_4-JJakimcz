@@ -6,4 +6,14 @@ def info(data):
 
 
 def border_map(a, b):
-    return [['.']]
+    m=[["." for _ in range(a)] for _ in range(b)]
+    
+    for x in range(b):
+        m[x][0] = "X"
+        m[x][a-1] = "X"
+
+    for y in range(a):
+        m[0][y] = "X"
+        m[b-1][y] = "X"
+
+    return m
